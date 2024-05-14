@@ -1,0 +1,35 @@
+[gd_scene load_steps=3 format=3 uid="uid://dd1c4hdq6iqnr"]
+
+[ext_resource type="Texture2D" uid="uid://c0nejqgycqadv" path="res://sprites/prototype/proto_card.png" id="1_0ovq1"]
+[ext_resource type="PackedScene" uid="uid://chh0bjjvjt2v8" path="res://scenes/Planets/LandMasses/LandMasses.tscn" id="2_gnle8"]
+
+[node name="Card" type="TextureRect"]
+texture = ExtResource("1_0ovq1")
+stretch_mode = 3
+
+[node name="Control" parent="." instance=ExtResource("2_gnle8")]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.5
+anchor_top = 0.294
+anchor_right = 0.5
+anchor_bottom = 0.294
+offset_left = -17.0
+offset_top = -17.52
+offset_right = 18.0
+offset_bottom = 17.48
+
+[node name="Label" type="Label" parent="."]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.5
+anchor_top = 0.606
+anchor_right = 0.5
+anchor_bottom = 0.606
+offset_left = -25.0
+offset_top = -11.48
+offset_right = 25.0
+offset_bottom = 11.52
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+text = "Planet"
+horizontal_alignment = 1

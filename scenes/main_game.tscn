@@ -1,0 +1,22 @@
+[gd_scene load_steps=4 format=3 uid="uid://dg28da4kbobm6"]
+
+[ext_resource type="PackedScene" uid="uid://clqvlybt45o7r" path="res://scenes/Planets/Star/Star.tscn" id="1_qadtl"]
+[ext_resource type="PackedScene" uid="uid://xvuem5suygxb" path="res://scenes/interface.tscn" id="2_14pw3"]
+[ext_resource type="PackedScene" uid="uid://cpohcqp2dajd8" path="res://scenes/player.tscn" id="3_3x1hm"]
+
+[node name="Main Game" type="Node2D"]
+
+[node name="Star" parent="." instance=ExtResource("1_qadtl")]
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = 270.0
+offset_top = 130.0
+offset_right = 370.0
+offset_bottom = 230.0
+
+[node name="Control" parent="." instance=ExtResource("2_14pw3")]
+
+[node name="Player" parent="." instance=ExtResource("3_3x1hm")]

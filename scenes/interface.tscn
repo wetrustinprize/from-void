@@ -1,0 +1,27 @@
+[gd_scene load_steps=3 format=3 uid="uid://xvuem5suygxb"]
+
+[ext_resource type="PackedScene" uid="uid://dd1c4hdq6iqnr" path="res://scenes/card.tscn" id="1_23ew1"]
+[ext_resource type="Texture2D" uid="uid://c0nejqgycqadv" path="res://sprites/prototype/proto_card.png" id="2_10vxt"]
+
+[node name="Interface" type="CanvasLayer"]
+
+[node name="TextureRect" type="HBoxContainer" parent="."]
+anchors_preset = 7
+anchor_left = 0.5
+anchor_top = 1.0
+anchor_right = 0.5
+anchor_bottom = 1.0
+offset_left = -111.5
+offset_top = -89.0
+offset_right = 111.5
+grow_horizontal = 2
+grow_vertical = 0
+alignment = 1
+
+[node name="Card" parent="TextureRect" instance=ExtResource("1_23ew1")]
+layout_mode = 2
+
+[node name="TextureRect2" type="TextureRect" parent="TextureRect"]
+layout_mode = 2
+texture = ExtResource("2_10vxt")
+stretch_mode = 3
